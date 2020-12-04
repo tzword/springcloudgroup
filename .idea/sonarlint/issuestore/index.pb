@@ -1,0 +1,27 @@
+
+E
+eureka-client/pom.xml,1\9\1939d6bcd0e950a81413f4056362594c66c07fe2
+E
+eureka-server/pom.xml,b\3\b39ae52d769ea03b699b5602439afd875433c8a7
+y
+Ieureka-server/src/test/java/com/tzword/eureka/EurekaApplicationTests.java,e\3\e39b467b2e30a198fc4a5158c509ca48817fe479
+7
+pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
+z
+Jeureka-server/src/main/java/com/tzword/eureka/EurekaServerApplication.java,c\0\c0b380f7094315fa07a60585a5418fc798e38c2e
+€
+Peureka-client/src/main/java/com/tzword/eurekaclient/EurekaClientApplication.java,d\1\d179403418f4b7c2485539053ad71341451cb7aa
+x
+Heureka-client/src/main/java/com/tzword/eurekaclient/controller/Test.java,0\b\0b011901ffa6f936ea29344c56fcd9c3f11d59ae
+y
+Ieureka-client/src/main/java/com/tzword/eurekaclient/controller/Test2.java,b\5\b5227e17ca96cfac2f230cb8c718d8308ed84f01
+O
+eureka-server/eureka-server.iml,5\9\59b33c14ea6e5070e27548952f906addf8bf425f
+„
+Teureka-client/src/main/java/com/tzword/eurekaclient/controller/ClientController.java,9\9\994767a214290341a5246495809c238103b0f0f7
+>
+ribbon/pom.xml,1\b\1bb87a21042786452662f469d6aad6fb4e169ce9
+h
+8ribbon/src/main/java/com/tzword/ribbon/RibbonConfig.java,5\7\57744f5e8fe8167281d26cb0a017eaf8d0628a73
+m
+=ribbon/src/main/java/com/tzword/ribbon/RibbonApplication.java,4\6\4634edfc254a11416796397ec19f7ae890f51ffe
