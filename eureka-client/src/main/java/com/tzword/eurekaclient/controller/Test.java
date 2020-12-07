@@ -17,29 +17,54 @@ import java.util.concurrent.locks.ReentrantLock;
 @Slf4j
 public class Test {
 
-    public static void main(String[] args) {
-        List<String> list = new ArrayList<>();
-        for (int i = 0; i < 20; i++) {
-            list.add("user-" + i);
-        }
-        ExecutorService executor = Executors.newFixedThreadPool(4);
-        ReentrantLock reentrantLock = new ReentrantLock();
-        for (int i = 0; i < 10; i++) {
-            final int index = i;
-            executor.execute(() -> {
-                try {
-                    //怕线程不安全进行加锁
-                    reentrantLock.lock();
-                    for (String s : list) {
-                        log.info("多表操作 {}",s);
-                    }
-                    reentrantLock.unlock();
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
+//    public static void main(String[] args) {
+//        List<String> list = new ArrayList<>();
+//        for (int i = 0; i < 20; i++) {
+//            list.add("user-" + i);
+//        }
+//        ExecutorService executor = Executors.newFixedThreadPool(4);
+//        ReentrantLock reentrantLock = new ReentrantLock();
+//        for (int i = 0; i < 10; i++) {
+//            final int index = i;
+//            executor.execute(() -> {
+//                try {
+//                    //怕线程不安全进行加锁
+//                    reentrantLock.lock();
+//                    for (String s : list) {
+//                        log.info("多表操作 {}",s);
+//                    }
+//                    reentrantLock.unlock();
+//                } catch (Exception e) {
+//                    e.printStackTrace();
+//                }
+//
+//                System.out.println(Thread.currentThread().getName() + "  " + index);
+//            });
+//        }
 
-                System.out.println(Thread.currentThread().getName() + "  " + index);
-            });
+
+        public static void main(String[] args) {
+            List<String> list = new ArrayList<>();
+            for (int i = 0; i < 20; i++) {
+                list.add("user-" + i);
+            }
+            ExecutorService executor = Executors.newFixedThreadPool(4);
+            ReentrantLock reentrantLock = new ReentrantLock();
+            for (int i = 0; i < list.size(); i++) {
+                final int index = i;
+                String s = list.get(i);
+                executor.execute(() -> {
+                    try {
+                        //怕线程不安全进行加锁
+//                    reentrantLock.lock();
+                        Thread.sleep(1000);
+                        log.info("多表操作 {}",s);
+//                        reentrantLock.unlock();
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                    System.out.println(Thread.currentThread().getName() + "  " + index);
+                });
+            }
         }
-    }
 }

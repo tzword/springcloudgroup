@@ -9,11 +9,13 @@
         <module name="eureka-client" />
         <module name="eureka-server" />
         <module name="ribbon" />
+        <module name="feign" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="eureka-client" target="1.8" />
       <module name="eureka-server" target="1.8" />
+      <module name="feign" target="1.8" />
       <module name="ribbon" target="1.8" />
       <module name="springcloudgroup" target="1.8" />
     </bytecodeTargetLevel>
@@ -22,6 +24,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="eureka-client" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
+      <module name="feign" options="-parameters" />
       <module name="ribbon" options="-parameters" />
       <module name="springcloudgroup" options="-parameters" />
     </option>
