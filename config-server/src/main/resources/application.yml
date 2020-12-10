@@ -9,7 +9,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/forezp/SpringcloudConfig/
+          uri: https://github.com/tzword/SpringcloudConfig/
           search-paths: respo
           username:
           password:
