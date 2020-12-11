@@ -27,6 +27,8 @@
         <module>zuul</module>
         <module>config-server</module>
         <module>config-client</module>
+        <module>eureka-client</module>
+        <module>turbine</module>
     </modules>
 
     <dependencies>

@@ -9,20 +9,26 @@
         <module name="zuul" />
         <module name="eureka-server" />
         <module name="eureka-client" />
+        <module name="turbine" />
         <module name="feign" />
         <module name="ribbon" />
+        <module name="eureka-client2" />
         <module name="config-server" />
         <module name="config-client" />
+        <module name="eureka-client (1)" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="config-client" target="1.8" />
       <module name="config-server" target="1.8" />
       <module name="eureka-client" target="1.8" />
+      <module name="eureka-client (1)" target="1.8" />
+      <module name="eureka-client2" target="1.8" />
       <module name="eureka-server" target="1.8" />
       <module name="feign" target="1.8" />
       <module name="ribbon" target="1.8" />
       <module name="springcloudgroup" target="1.8" />
+      <module name="turbine" target="1.8" />
       <module name="zuul" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -31,10 +37,13 @@
       <module name="config-client" options="-parameters" />
       <module name="config-server" options="-parameters" />
       <module name="eureka-client" options="-parameters" />
+      <module name="eureka-client (1)" options="-parameters" />
+      <module name="eureka-client2" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
       <module name="feign" options="-parameters" />
       <module name="ribbon" options="-parameters" />
       <module name="springcloudgroup" options="-parameters" />
+      <module name="turbine" options="-parameters" />
       <module name="zuul" options="-parameters" />
     </option>
   </component>

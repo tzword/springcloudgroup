@@ -14,6 +14,8 @@
         <option value="$PROJECT_DIR$/feign/pom.xml" />
         <option value="$PROJECT_DIR$/zuul/pom.xml" />
         <option value="$PROJECT_DIR$/config-client/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka-client2/pom.xml" />
+        <option value="$PROJECT_DIR$/turbine/pom.xml" />
       </list>
     </option>
   </component>
