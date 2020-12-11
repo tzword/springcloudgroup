@@ -11,10 +11,6 @@ z
 Jeureka-server/src/main/java/com/tzword/eureka/EurekaServerApplication.java,c\0\c0b380f7094315fa07a60585a5418fc798e38c2e
 €
 Peureka-client/src/main/java/com/tzword/eurekaclient/EurekaClientApplication.java,d\1\d179403418f4b7c2485539053ad71341451cb7aa
-x
-Heureka-client/src/main/java/com/tzword/eurekaclient/controller/Test.java,0\b\0b011901ffa6f936ea29344c56fcd9c3f11d59ae
-y
-Ieureka-client/src/main/java/com/tzword/eurekaclient/controller/Test2.java,b\5\b5227e17ca96cfac2f230cb8c718d8308ed84f01
 O
 eureka-server/eureka-server.iml,5\9\59b33c14ea6e5070e27548952f906addf8bf425f
 „

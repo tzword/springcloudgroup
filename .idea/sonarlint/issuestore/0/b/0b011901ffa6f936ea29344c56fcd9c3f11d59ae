@@ -1,11 +1,0 @@
-
-_squid:S18544"ARemove this useless assignment to local variable "reentrantLock".(ƒ„¨§8Œ¤˜Øã.
-nsquid:CommentedOutCodeLine)"<This block of commented-out lines of code should be removed.(Ï»¡«úÿÿÿÿ8ó†Ã×ã.
-isquid:CommentedOutCodeLine;"<This block of commented-out lines of code should be removed.(É –Ë8Œ¤˜Øã.
-[
-squid:S106B"9Replace this use of System.out or System.err by a logger.(¾Ô¬›üÿÿÿÿ8…ù’Øã.
-Fsquid:S1148@"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8…ù’Øã.
-nsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(»ž•ûÿÿÿÿ8ó†Ã×ã.
-isquid:CommentedOutCodeLine "<This block of commented-out lines of code should be removed.(É –Ë8ó†Ã×ã.
-Psquid:S14814"2Remove this unused "reentrantLock" local variable.(ƒ„¨§8Œ¤˜Øã.
-nsquid:CommentedOutCodeLine>"<This block of commented-out lines of code should be removed.(ÂÄìÃúÿÿÿÿ8Œ¤˜Øã.
