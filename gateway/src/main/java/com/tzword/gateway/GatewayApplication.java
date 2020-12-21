@@ -1,5 +1,6 @@
 package com.tzword.gateway;
 
+import com.tzword.gateway.config.HostAddrKeyResolver;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.gateway.route.RouteLocator;
@@ -17,29 +18,34 @@ public class GatewayApplication {
         SpringApplication.run(GatewayApplication.class, args);
     }
 
+//    @Bean
+//    public RouteLocator myRoutes(RouteLocatorBuilder builder) {
+//        String httpUri = "http://httpbin.org:80";
+//        return builder.routes()
+//                .route(p -> p
+//                        .path("/get")
+//                        .filters(f -> f.addRequestHeader("Hello", "World"))
+//                        .uri(httpUri))
+//                .route(p -> p
+//                        .host("*.hystrix.com")
+//                        .filters(f -> f
+//                                .hystrix(config -> config
+//                                        .setName("mycmd")
+//
+//                                        .setFallbackUri("forward:/fallback")))
+//                        .uri(httpUri))
+//                .build();
+//    }
+//
+//
+//    @RequestMapping("/fallback")
+//    public Mono<String> fallback() {
+//        return Mono.just("failback");
+//    }
+
     @Bean
-    public RouteLocator myRoutes(RouteLocatorBuilder builder) {
-        String httpUri = "http://httpbin.org:80";
-        return builder.routes()
-                .route(p -> p
-                        .path("/get")
-                        .filters(f -> f.addRequestHeader("Hello", "World"))
-                        .uri(httpUri))
-                .route(p -> p
-                        .host("*.hystrix.com")
-                        .filters(f -> f
-                                .hystrix(config -> config
-                                        .setName("mycmd")
-
-                                        .setFallbackUri("forward:/fallback")))
-                        .uri(httpUri))
-                .build();
-    }
-
-
-    @RequestMapping("/fallback")
-    public Mono<String> fallback() {
-        return Mono.just("failback");
+    public HostAddrKeyResolver hostAddrKeyResolver() {
+        return new HostAddrKeyResolver();
     }
 
 

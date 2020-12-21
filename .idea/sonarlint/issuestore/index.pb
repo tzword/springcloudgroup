@@ -648,3 +648,5 @@ y
 I.idea/libraries/Maven__org_synchronoss_cloud_nio_stream_storage_1_1_3.xml,a\a\aabb9c2d2bbe2f057d4beb0cc55b25ae325ed42e
 Z
 *gateway/src/main/resources/application.yml,6\9\69f854aca2550dae5ffb5cdb1c4ca8f8460a93d3
+x
+Hgateway/src/main/java/com/tzword/gateway/config/HostAddrKeyResolver.java,6\2\62897f050dece4ecb53465ef1f02dc4e79fc5194
