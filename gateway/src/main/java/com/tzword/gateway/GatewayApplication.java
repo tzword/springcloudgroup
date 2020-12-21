@@ -1,17 +1,15 @@
 package com.tzword.gateway;
 
-import com.tzword.gateway.config.HostAddrKeyResolver;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.gateway.route.RouteLocator;
-import org.springframework.cloud.gateway.route.builder.RouteLocatorBuilder;
-import org.springframework.context.annotation.Bean;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.web.bind.annotation.RestController;
-import reactor.core.publisher.Mono;
 
 @SpringBootApplication
 @RestController
+@EnableEurekaClient
+@EnableDiscoveryClient
 public class GatewayApplication {
 
     public static void main(String[] args) {
@@ -43,10 +41,10 @@ public class GatewayApplication {
 //        return Mono.just("failback");
 //    }
 
-    @Bean
-    public HostAddrKeyResolver hostAddrKeyResolver() {
-        return new HostAddrKeyResolver();
-    }
+//    @Bean
+//    public HostAddrKeyResolver hostAddrKeyResolver() {
+//        return new HostAddrKeyResolver();
+//    }
 
 
 }
