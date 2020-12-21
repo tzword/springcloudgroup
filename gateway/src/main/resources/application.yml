@@ -13,8 +13,15 @@ spring:
     gateway:
       discovery:
         locator:
-          enabled: true
+          enabled: false
           lower-case-service-id: true
+      routes:
+      - id: service-hi
+        uri: lb://SERVICE-HI
+        predicates:
+        - Path=/demo/**
+        filters:
+        - StripPrefix=1
 #      routes:
 #      - id: limit_route
 #        uri: http://httpbin.org:80/get
